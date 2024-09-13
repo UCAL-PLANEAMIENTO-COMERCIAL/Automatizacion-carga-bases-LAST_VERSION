@@ -1,0 +1,6 @@
+database:
+  name: 'prd'
+  user: 'pbiuser'
+  password: 'U6id3HLXmvWn'
+  host: 'ieduca-dl-redshift-cluster.cxyqhjo3st83.us-east-1.redshift.amazonaws.com'
+  port: '5439'

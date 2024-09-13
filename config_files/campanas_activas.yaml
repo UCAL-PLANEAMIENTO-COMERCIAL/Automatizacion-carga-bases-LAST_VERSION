@@ -1,0 +1,5 @@
+campanas: [ '2025-1']
+bases_resultantes: [ ['2025-1']]
+comparable: False 
+pagante_crm: [0, 1]
+convocatoria: [0, 1]
