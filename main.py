@@ -1,10 +1,8 @@
 import yaml
-import pandas as pd
 import funciones_bases_campanas as fbc
-import bases_hsm_filtros as fbh
+import funciones_base_hsm as fbh
 import funciones_generales as fg
 from dateutil.relativedelta import relativedelta
-
 
 def main():
     fg.borrar_carpeta('bases_resultantes\\')
@@ -53,21 +51,19 @@ def main():
     #fg.upload_to_drive(path, folder_id)
     fg.upload_to_drive(path2, folder_id)
     
-     # Ejecutar filtros y guardar los resultados
-    
-    df2 = pd.read_excel(path2)
+    """
     path=("BASES_HSM_AON_Y_TACTICOS.xlsx")
 
     with pd.ExcelWriter(path) as writer:
         #(filtrarDataAON(df)).to_excel(writer,sheet_name='CONVO 242', index=False)
         print("data 24.2 has been saved to 'HSM_.xlsx'")
-        (fbh.filtrarDataAON(df2)).to_excel(writer, sheet_name='CONVO 251', index=False)
-        (fbh.filtrarDataAONCOLE(df2)).to_excel(writer, sheet_name='COLES 251', index=False)
+        (filtrarDataAON(df2)).to_excel(writer, sheet_name='CONVO 251', index=False)
+        (filtrarDataAONCOLE(df2)).to_excel(writer, sheet_name='COLES 251', index=False)
         print("data 25.1 has been saved to '25_1.xlsx'")
         #(filtrarData(df)).to_excel(writer,sheet_name='TACTICOS 242', index=False)
-        (fbh.filtrarData(df2)).to_excel(writer, sheet_name='TACTICOS 251', index=False)
+        (filtrarData(df2)).to_excel(writer, sheet_name='TACTICOS 251', index=False)
         print("data TACTICOS has been saved to '25_1.xlsx'")
-        
+        """
 
     
     return 
